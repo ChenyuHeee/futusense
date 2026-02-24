@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=https://ChenyuHeee.github.io/SentiX/" />
+    <link rel="canonical" href="https://ChenyuHeee.github.io/SentiX/" />
+  </head>
+  <body>
+    <noscript>
+      <p>Redirecting to <a href="https://ChenyuHeee.github.io/SentiX/">SentiX</a>…</p>
+    </noscript>
+    <script>
+      (function () {
+        try {
+          var u = new URL(window.location.href);
+          // GitHub project pages: /futusense/... -> /SentiX/...
+          if (/^\/futusense(\/|$)/.test(u.pathname)) {
+            u.pathname = u.pathname.replace(/^\/futusense(\/|$)/, '/SentiX$1');
+          } else if (u.pathname.startsWith('/')) {
+            // Fallback: keep same path under /SentiX
+            u.pathname = '/SentiX' + u.pathname;
+          } else {
+            u.pathname = '/SentiX/';
+          }
+          window.location.replace(u.toString());
+        } catch (e) {
+          window.location.href = 'https://ChenyuHeee.github.io/SentiX/';
+        }
+      })();
+    </script>
+  </body>
+</html>
